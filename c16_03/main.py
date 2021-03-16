@@ -34,8 +34,28 @@ for x in notes :
     if x[1] == 'math':
       noteseleve1mat = noteseleve1mat + x[2]
       l2 = l2+1
-  moyeleve1mat = noteseleve1mat/l2
+    moyeleve1mat = noteseleve1mat/l2
 print('moyenne de eleve 1 en maths :', moyeleve1mat)
 
 #c/ 
+
+def moyenne_tuples(notes, eleve=None, matiere=None):
+  l = 0
+  noteseleve = 0
+  moyeleve = 0
+  for x in notes:
+    if x[0] == eleve or eleve==None:
+      if x[1] == matiere or matiere==None:
+        noteseleve = noteseleve + x[2]
+        l = l+1
+      moyeleve = noteseleve/(l)
+  return(moyeleve)
+
+print('moyenne eleve 1 en maths : ',moyenne_tuples(notes,'eleve1','math'))
+
+print('moyenne eleve 2 en maths : ',moyenne_tuples(notes,'eleve2','math'))
+
+print('moyennes des notes de tous les eleves dans toutes les matieres :',moyenne_tuples(notes))
+
+
 
