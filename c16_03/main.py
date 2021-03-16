@@ -65,3 +65,5 @@ print('moyennes des notes de tous les eleves dans toutes les matieres :',moyenne
 # Pour ajouter des coefficients aux notes et aux matières il faudrait rajouter des paramètres dans la fonction.
 
 
+
+
