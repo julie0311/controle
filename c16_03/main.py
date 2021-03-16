@@ -57,5 +57,11 @@ print('moyenne eleve 2 en maths : ',moyenne_tuples(notes,'eleve2','math'))
 
 print('moyennes des notes de tous les eleves dans toutes les matieres :',moyenne_tuples(notes))
 
+#print(moyenne_tuples(notes,'eleve1', 'maths'))
+# si on écrit mal la matière, la fonction ne peut pas fonctionner 
+# de meme si on entre une chaine de caractère au lieu d'un nomvre puisque les calculs ne pourront pas se faire 
+
+
+# Pour ajouter des coefficients aux notes et aux matières il faudrait rajouter des paramètres dans la fonction.
 
 
