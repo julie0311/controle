@@ -14,11 +14,26 @@ notes = [note1, note2, note3, note4, note5, note6,note7,note8]
 print(notes)
 
 #a/ moyenne de eleve 1
-moyeleve1=0
+noteseleve1=0
+l1=0
 
 for x in notes :
   if x[0] == 'eleve1':
-    moyeleve1 = moyeleve1 + x[2]
-print(moyeleve1)
+    noteseleve1 = noteseleve1 + x[2]
+    l1=l1+1
+  moyeleve1 = noteseleve1/l1
+print('moyenne de eleve 1 : ',moyeleve1)
 
 #b/ moyenne de eleve 1 en maths
+
+noteseleve1mat=0
+l2=0
+
+for x in notes :
+  if x[0] == 'eleve1':
+    if x[1] == 'math':
+      noteseleve1mat = noteseleve1mat + x[2]
+      l2 = l2+1
+  moyeleve1mat = noteseleve1mat/l2
+print('moyenne de eleve 1 en maths :', moyeleve1mat)
+
