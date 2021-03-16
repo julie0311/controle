@@ -37,3 +37,5 @@ for x in notes :
   moyeleve1mat = noteseleve1mat/l2
 print('moyenne de eleve 1 en maths :', moyeleve1mat)
 
+#c/ 
+
